@@ -98,6 +98,7 @@ local function check_promote_to_auto_trusted()
             player_ranks[p_name] = auto_trusted
             set_data(ranking_data_set, p_name, auto_trusted)
             guests[index] = nil
+			Popup.player(p_name, "We hope you've enjoyed your time on Redmew Servers. You have earned the Auto-trusted rank and now have full access to the deconstruction planner.\n\nIf you plan on playing with us again and want to be notified when new maps go live, give us feedback, or get more involved, we encourage you to join our discord at www.Redmew.com/discord.\nWe also use the helpdesk-and-moderation channel on discord to monitor problems across all our servers.\nIf an admin is not online in your game and you have a problem, send us a message and one of our admins will respond to you as soon as possible to remedy the situation.\n\nNow get back to work! The factory must grow!")
         elseif not p.connected then
             guests[index] = nil
         end
